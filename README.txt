@@ -122,8 +122,7 @@ This folder contains five files:
 		changed all the FASTA headers of the genome to the "chrX" format I
 		used. This is S288C.fa
 		
-		bedtools getfasta -s -name -fi S288C.fa -bed saccharomyces_cerevisiae.upstream.bed -fo tmpupstream.fa
-		fastx_collapser -i tmpupstream.fa | fold -60 > saccharomyces_cerevisiae.upstream.fa
+		bedtools getfasta -s -name -fi S288C.fa -bed saccharomyces_cerevisiae.upstream.bed -fo saccharomyces_cerevisiae.upstream.fa
 		
 		NB^2: If you make these changes by hand (like I did), you will probably
 		need to "repair" your FASTA, as there will be an unseen difference
